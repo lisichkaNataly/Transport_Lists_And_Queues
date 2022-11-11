@@ -81,6 +81,15 @@ public class Main {
                 man, gaz,
                 iveco,volvo);
 
+
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.addCar(lada);
+        serviceStation.addCar(audi);
+        serviceStation.addTruck(iveco);
+        serviceStation.service();
+        serviceStation.service();
+        serviceStation.service();
+
         for (Transport transport : transports) {
             printInfo(transport);
         }
